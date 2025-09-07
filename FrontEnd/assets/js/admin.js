@@ -8,7 +8,7 @@ async function checkToken() {
     if (loginToken) {
         editionHeader.style.display = 'flex';
         filter.style.display = 'none';
-        titleI.style.display = 'null';
+        titleI.style.display = 'block';
         titleP.style.display = 'block';
         login.textContent = "logout";
         logOut();
@@ -16,7 +16,7 @@ async function checkToken() {
         editionHeader.style.display = 'none';
         titleI.style.display = 'none';
         titleP.style.display = 'none';
-        filter.style.display = 'null';
+        filter.style.display = 'flex';
         login.textContent = "login"
     }
 }
