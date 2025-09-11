@@ -1,7 +1,6 @@
 async function getCategories() {
     const categories = await fetch("http://localhost:5678/api/categories");
     const categoriesJson = await categories.json();
-    console.log(categoriesJson)
     return categoriesJson;
 }
 
@@ -11,7 +10,6 @@ async function displayCategories() {
     const categories = await getCategories();
     const categoriesContainer = document.querySelector(".filter");
     const filterButtonTousInfos = {id:"0", name:"Tous"}
-
     const filterButtonTous = createFilterButton(filterButtonTousInfos)
     filterButtonTous.classList.add("button-selected")
     
@@ -43,10 +41,7 @@ function createFilterButton(infos) {
 displayCategories()
 
 
-async function buttonsManagements() {
-    const buttonT = document.getElementById("0")
 
-}
 
 
 
