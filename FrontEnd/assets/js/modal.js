@@ -60,6 +60,7 @@ returnToOldModal.addEventListener("click", function () {
 
 addProjectsButton.addEventListener("click", function () {
    closeModal()
+   resetSendWorkForm(document.getElementById("new-project"))
    openModal("modal-add-projects")
 })
 
@@ -146,6 +147,7 @@ function sendNewProject() {
 
       if (!result.ok) {
          errorMessage.innerText = "Erreur lors de l'envoie"
+         resetSendWorkForm(form)
       } else {
          displayProjectsInModal()
          displayProjects(0)
