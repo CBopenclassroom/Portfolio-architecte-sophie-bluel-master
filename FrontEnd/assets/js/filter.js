@@ -4,7 +4,7 @@ async function getCategories() {
     return categoriesJson;
 }
 
-getCategories()
+
 
 async function displayCategories() {
     const categories = await getCategories();
@@ -20,7 +20,6 @@ async function displayCategories() {
         const filterButton = createFilterButton(categories[i])
         categoriesContainer.appendChild(filterButton)
     }
-
 }
 
 function createFilterButton(infos) {
@@ -39,9 +38,5 @@ function createFilterButton(infos) {
 
 
 displayCategories()
-
-
-
-
 
 

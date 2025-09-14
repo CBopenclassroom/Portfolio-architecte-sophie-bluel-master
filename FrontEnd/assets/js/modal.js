@@ -104,7 +104,6 @@ function handleFileSelection() {
    uploadProjectFile.addEventListener("change", function (e) {
       const file = e.target.files[0]
       const url = URL.createObjectURL(file)
-      console.log(url)
       if (file.type.includes("image")) {
          const previewImg = document.getElementById("project-preview")
          previewImg.setAttribute("src", url)

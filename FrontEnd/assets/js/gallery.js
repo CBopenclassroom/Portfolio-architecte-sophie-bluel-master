@@ -7,7 +7,7 @@ async function getProjects() {
 }
 
 
-getProjects()
+
 
 
 async function displayProjects(idCategory) {
@@ -15,7 +15,7 @@ async function displayProjects(idCategory) {
     const filteredProjects = projects.filter((project) => project.categoryId == idCategory || idCategory == 0)
     const galleryContainer = document.querySelector(".gallery");
     galleryContainer.innerHTML = null
-    for (let i = 0; i < filteredProjects.length; i++) {
+    for (let i = 0; i < filteredProjects.length; i++){
         const figure = document.createElement("figure");
         const pictures = document.createElement("img")
         const caption = document.createElement("figcaption")

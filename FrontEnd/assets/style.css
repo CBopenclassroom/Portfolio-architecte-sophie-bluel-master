@@ -246,7 +246,7 @@ li a:hover {
 	gap: 10px;
 }
 
-.filter-button {
+.filter-button, [id='0'] {
 	background-color: white;
 	border-width: 1px;
 	border-style: solid;
@@ -258,7 +258,9 @@ li a:hover {
 	font-size: 16px;
 }
 
-.button-selected {
+
+
+.button-selected{
 	font-size: 16px;
 	border-width: 1px;
 	border-style: solid;
@@ -269,6 +271,15 @@ li a:hover {
 	border-radius: 60px;
 	height: 37px;
 }
+
+[id='0']{
+	width: 100px;
+}
+
+[id='1']{
+	width: 100px;
+}
+
 
 #contact {
 	width: 50%;
@@ -573,4 +584,8 @@ footer nav ul {
 #modal-add-projects hr {
 	width: 70%;
 	margin-bottom: 32px;
+}
+
+#0 {
+	width: 100px;
 }
